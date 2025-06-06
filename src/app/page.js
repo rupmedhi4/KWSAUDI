@@ -45,13 +45,13 @@ const Home = () => {
    
 
         {/* Hero Content */}
-         <div className="relative z-10 flex flex-col items-center justify-center text-white pt-105 md:pt-84 px-4">
-         <h1 className="text-sm md:text-4xl mb-60 font-bold  text-white">
+         <div className="relative z-10 flex flex-col items-center justify-center text-white pt-105 md:pt-82.5 px-4">
+         <h1 className="text-sm md:text-4xl mb-50 font-bold  text-white">
             ONE MOVE COULD SHAPE YOUR FUTURE
           </h1>
 
          {/* Search Box */}
-          <div className="absolute left-1/2 -bottom-34 transform -translate-x-1/2 z-10 w-full max-w-xl">
+          <div className="absolute left-1/2 transform -translate-x-1/2 z-10 w-full max-w-xl md:mt-72">
             <div className="bg-white rounded-t-3xl p-4 shadow-lg pb-8">
         <div className="flex flex-col md:flex-row items-center w-full px-6 mt-8 sm:px-8 gap-2 sm:gap-0">
   {/* Search Input - full width on mobile, attached on desktop */}
