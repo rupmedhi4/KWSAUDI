@@ -51,7 +51,7 @@ const Home = () => {
           </h1>
 
          {/* Search Box */}
-          <div className="absolute left-1/2 -bottom-40 transform -translate-x-1/2 z-10 w-full max-w-xl">
+          <div className="absolute left-1/2 -bottom-34 transform -translate-x-1/2 z-10 w-full max-w-xl">
             <div className="bg-white rounded-t-3xl p-4 shadow-lg pb-8">
         <div className="flex flex-col md:flex-row items-center w-full px-6 mt-8 sm:px-8 gap-2 sm:gap-0">
   {/* Search Input - full width on mobile, attached on desktop */}
