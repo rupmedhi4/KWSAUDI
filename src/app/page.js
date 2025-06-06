@@ -1,27 +1,10 @@
 'use client'
 import React, { useState } from "react";
 import { FaSearch, FaBars, FaTimes , FaBuilding,
-  FaNetworkWired,
-  FaUserTie,
-  FaKey,
-  FaUser,
-  FaUsers,
-  FaGlobe,
-  FaHome,
-  FaEnvelope,
-  FaPhone,
-  FaFacebookF,
-  FaInstagram,
-  FaLinkedinIn,
-  FaYoutube,
-  FaTwitter ,
-  FaTiktok,
-  FaSnapchatGhost,
-  FaWhatsapp,FaChevronDown} from "react-icons/fa";
+ FaChevronDown} from "react-icons/fa";
   import Link from 'next/link';
   import Footer from "@/components/footer";
-import { MdHomeWork, MdPersonSearch, MdSell, MdPeople, MdKey, MdBusiness, MdGroup } from "react-icons/md";
-import { useEffect,useRef  } from 'react';
+
 import Header from "@/components/header";
 const Home = () => {
  
@@ -39,17 +22,17 @@ const Home = () => {
       alt="hero"
       className="w-full h-full object-cover"
     />
-    <div className="absolute inset-0 bg-opacity-50" />
+  
   </div>
 
   {/* Hero Content */}
-  <div className="relative z-10 flex flex-col items-center justify-centermin-h-[40vh] md:min-h-[100vh] px-4 ">
-    <h1 className="text-sm md:text-4xl font-bold text-white mb-4 md:mb-8 mt-50 md:mt-90">
+  <div className="relative z-10 flex flex-col items-center justify-center min-h-[40vh] md:min-h-[100vh] px-4 ">
+    <h1 className="text-sm md:text-4xl font-bold text-white mb-4 md:mb-8 mt-100 md:mt-60">
       ONE MOVE COULD SHAPE YOUR FUTURE
     </h1>
 
     {/* Search Box - Fixed Positioning */}
-    <div className="absolute left-0 right-0 mt-150 md:mt-115.5">
+    <div className="absolute left-0 right-0 mt-100 md:mt-150">
       <div className="w-full max-w-2xl mx-auto ">
         <div className="bg-white rounded-t-3xl p-4 shadow-lg pb-8 ">
           <div className="flex flex-col md:flex-row items-center w-full px-6 mt-8 sm:px-8 gap-2 sm:gap-0 ">
