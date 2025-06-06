@@ -20,7 +20,7 @@ const Box = ({ src, image, h3 }) => {
 
                 {/* White Box (Fixed Dimensions) */}
                 <div className="relative z-10 flex flex-col items-center justify-end min-h-[40vh] md:min-h-[100vh] px-4">
-                    <div className="w-full max-w-2xl mx-auto">
+                    <div className="w-full max-w-2\xl mx-auto">
                         <div className="bg-white rounded-t-3xl w-full"> 
                             <div className="flex flex-col items-center"> 
                                 <img

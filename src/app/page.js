@@ -33,7 +33,7 @@ const Home = () => {
 
     {/* Search Box - Fixed Positioning */}
     <div className="absolute left-0 right-0 mt-100 md:mt-150">
-      <div className="w-full max-w-2xl mx-auto ">
+      <div className="w-full max-w-xl mx-auto ">
         <div className="bg-white rounded-t-3xl p-4 shadow-lg pb-8 ">
           <div className="flex flex-col md:flex-row items-center w-full px-6 mt-8 sm:px-8 gap-2 sm:gap-0 ">
             {/* Search Input */}
