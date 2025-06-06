@@ -4,33 +4,33 @@ const Box = ({ src, image, h3 }) => {
     return (
         <div className="w-full">
             {/* Hero Section */}
-            <div className="relative min-h-[40vh] md:min-h-[100vh]"> {/* Use [100vh] instead of screen */}
+            <div className="relative min-h-[40vh] md:min-h-[100vh]"> 
                 {/* Background Image */}
                 <div className="absolute inset-0">
                     <img
                         src={src}
                         alt="Background"
                         className="object-cover w-full h-full"
-                        width={1920}  // Explicit dimensions
+                        width={1920}  
                         height={1080}
-                        loading="eager" // Prevents lazy-loading shifts
+                        loading="eager" 
                     />
-                    <div className="absolute inset-0" /> {/* Fixed bg-opacity syntax */}
+                    <div className="absolute inset-0" /> 
                 </div>
 
                 {/* White Box (Fixed Dimensions) */}
                 <div className="relative z-10 flex flex-col items-center justify-end min-h-[40vh] md:min-h-[100vh] px-4">
-                    <div className="w-full max-w-xl mx-auto">
-                        <div className="bg-white rounded-t-3xl w-full"> {/* Ensure full width */}
-                            <div className="flex flex-col items-center"> {/* Padding stabilizes height */}
+                    <div className="w-full max-w-2xl mx-auto">
+                        <div className="bg-white rounded-t-3xl w-full"> 
+                            <div className="flex flex-col items-center"> 
                                 <img
                                     src={image}
                                     alt="Hero"
-                                    className="w-40 h-40 object-cover rounded-full" /* Optional: rounded for consistency */
+                                    className="w-40 h-40 object-cover rounded-full" 
                                     width={160}  // Explicit dimensions
                                     height={160}
                                 />
-                                <div className="w-32 h-0.5 bg-red-600"></div> {/* Fixed width & added margin */}
+                                <div className="w-32 h-0.5 bg-red-600"></div> 
                             </div>
                         </div>
                     </div>
