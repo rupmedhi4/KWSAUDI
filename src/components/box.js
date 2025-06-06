@@ -1,42 +1,48 @@
 import React from 'react';
 
-const Box = (props) => {
+const Box = ({ src, image, h3 }) => {
     return (
         <div className="w-full">
             {/* Hero Section */}
-            <div className="relative min-h-[40vh] md:min-h-screen">
+            <div className="relative min-h-[40vh] md:min-h-[100vh]"> {/* Use [100vh] instead of screen */}
+                {/* Background Image */}
                 <div className="absolute inset-0">
                     <img
-                        src={props.src}
-                        alt="KW Saudi Arabia background"
+                        src={src}
+                        alt="Background"
                         className="object-cover w-full h-full"
+                        width={1920}  // Explicit dimensions
+                        height={1080}
+                        loading="eager" // Prevents lazy-loading shifts
                     />
-                    <div className="absolute inset-0 bg-opacity-50" />
+                    <div className="absolute inset-0" /> {/* Fixed bg-opacity syntax */}
                 </div>
-                
-                {/* Hero Content - Fixed positioning */}
-                <div className="relative z-10 flex flex-col items-center justify-end  md:min-h-screen px-4">
+
+                {/* White Box (Fixed Dimensions) */}
+                <div className="relative z-10 flex flex-col items-center justify-end min-h-[40vh] md:min-h-[100vh] px-4">
                     <div className="w-full max-w-xl mx-auto">
-                        <div className="bg-white rounded-t-3xl mt-60 md:mt-40">
-                            <div className="flex flex-col items-center">
+                        <div className="bg-white rounded-t-3xl w-full"> {/* Ensure full width */}
+                            <div className="flex flex-col items-center"> {/* Padding stabilizes height */}
                                 <img
-                                    src={props.image}
-                                    alt="hero"
-                                    className="w-40 h-40 object-cover"
+                                    src={image}
+                                    alt="Hero"
+                                    className="w-40 h-40 object-cover rounded-full" /* Optional: rounded for consistency */
+                                    width={160}  // Explicit dimensions
+                                    height={160}
                                 />
-                                <div className="w-50 h-[1.5px] bg-red-600"></div>
-                              
+                                <div className="w-32 h-0.5 bg-red-600"></div> {/* Fixed width & added margin */}
                             </div>
                         </div>
                     </div>
                 </div>
-                
             </div>
-             <h3 className="text-lg md:text-xl font-normal text-center tracking-[0.2em] leading-relaxed pt-4">
-                                    {props.h3}
-                                </h3>
+
+            {/* Title (Stable Spacing) */}
+            <h3 className="text-lg md:text-xl font-normal text-center tracking-wider leading-relaxed py-6">
+                {h3}
+            </h3>
         </div>
     );
-}
+};
 
 export default Box;
