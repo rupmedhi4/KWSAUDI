@@ -43,16 +43,16 @@ const Home = () => {
   </div>
 
   {/* Hero Content */}
-  <div className="relative z-10 flex flex-col items-center justify-center h-[70vh] md:h-screen px-4">
-    <h1 className="text-sm md:text-4xl font-bold text-white mb-4 md:mb-8">
+  <div className="relative z-10 flex flex-col items-center justify-center h-[70vh] md:h-screen px-4 ">
+    <h1 className="text-sm md:text-4xl font-bold text-white mb-4 md:mb-8 mt-50 md:mt-50">
       ONE MOVE COULD SHAPE YOUR FUTURE
     </h1>
 
     {/* Search Box - Fixed Positioning */}
-    <div className="absolute bottom-0 left-0 right-0">
-      <div className="w-full max-w-xl mx-auto">
-        <div className="bg-white rounded-t-3xl p-4 shadow-lg pb-8">
-          <div className="flex flex-col md:flex-row items-center w-full px-6 mt-8 sm:px-8 gap-2 sm:gap-0">
+    <div className="absolute left-0 right-0 mt-150 md:mt-150">
+      <div className="w-full max-w-xl mx-auto ">
+        <div className="bg-white rounded-t-3xl p-4 shadow-lg pb-8 ">
+          <div className="flex flex-col md:flex-row items-center w-full px-6 mt-8 sm:px-8 gap-2 sm:gap-0 ">
             {/* Search Input */}
             <div className="flex items-center w-full min-h-[48px] px-6 border border-gray-300 rounded-full md:rounded-l-full md:rounded-r-none focus-within:ring-1 transition-all">
               <FaSearch className="text-gray-500 mr-3 flex-shrink-0" />

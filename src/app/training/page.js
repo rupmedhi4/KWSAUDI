@@ -6,7 +6,7 @@ import Footer from '@/components/footer';
 
 export default function Training() {
   return (
-    <div className="relative">
+    <div>
       <Header />
       <Box
         h3={"Kw Training"}
