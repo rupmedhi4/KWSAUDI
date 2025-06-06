@@ -34,8 +34,8 @@ const Home = () => {
           </h1>
 
           {/* Search Box - Fixed Positioning */}
-          <div className="absolute left-0 right-0 mt-150 md:mt-160">
-            <div className="w-full max-w-xl mx-auto">
+          <div className="absolute left-0 right-0  mt-150 md:mt-162">
+            <div className="w-full max-w-xl mx-auto ">
               <div className="bg-white rounded-t-3xl p-4 shadow-lg pb-8">
                 <div className="flex flex-col md:flex-row items-center w-full px-6 mt-8 sm:px-8 gap-2 sm:gap-0">
                   <div className="flex items-center w-full min-h-[48px] px-6 border border-gray-300 rounded-full md:rounded-l-full md:rounded-r-none focus-within:ring-1 transition-all">
@@ -72,7 +72,7 @@ const Home = () => {
       </div>
 
       {/* Image Grid Section */}
-      <div className="px-4 md:py-22 py-2 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8 gap-1 md:gap-4 mt-50 lg:mt-32">
+      <div className="px-4 md:py-22 py-2 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8 gap-1 md:gap-4 mt-90 lg:mt-32">
         {[
           { label: "Properties", path: 'properties', imageUrl: "https://static.wixstatic.com/media/36a881_58e60526563049da91b5a702cb9995ac~mv2.png/v1/fill/w_230,h_189,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/1.png" },
           { label: "Market Center", path: 'marketCenter', imageUrl: "https://static.wixstatic.com/media/36a881_63ae150a87e247f4910718ae270a72c0~mv2.png/v1/fill/w_230,h_189,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2.png" },
