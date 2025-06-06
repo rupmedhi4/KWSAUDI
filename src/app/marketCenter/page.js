@@ -15,7 +15,7 @@ const Page = () => {
   </Box>
           
 
-  <div className="w-full mx-auto px-4 md:px-8 md:mt-40 lg:px-20 py-8 mt-26">
+  <div className="w-full mx-auto px-4 md:px-8 md:mt-40 lg:px-20 py-8 mt-10">
   <div className="flex flex-col lg:flex-row gap-6 lg:gap-14">
     {/* First Image Block - Full width on mobile, 50% on desktop */}
     <div className="w-full lg:w-1/2 overflow-hidden rounded-lg">
